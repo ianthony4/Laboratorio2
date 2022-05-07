@@ -12,6 +12,10 @@ function crearTabla(){
     </tr>`;
     alert("Le dio al boton");
     for(let i = 0; i < cantidadValores; i++){
-
+        tabla += "<tr>"+aleatorio()+"</tr>";
     }
+    tabla += "</table>";
+}
+function aleatorio(){
+    return parseInt((Math.random()*100)+1);
 }
