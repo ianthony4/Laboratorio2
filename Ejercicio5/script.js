@@ -15,6 +15,7 @@ function crearTabla(){
         tabla += "<tr>"+aleatorio()+"</tr>";
     }
     tabla += "</table>";
+    document.getElementById("tabla").innerHTML = tabla;
 }
 function aleatorio(){
     return parseInt((Math.random()*100)+1);
