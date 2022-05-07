@@ -12,7 +12,7 @@ function crearTabla(){
     </tr>`;
     alert("Le dio al boton");
     for(let i = 0; i < cantidadValores; i++){
-        tabla += "<tr>"+aleatorio()+"</tr>";
+        tabla += "<tr><td>"+aleatorio()+"</td></tr>";
     }
     tabla += "</table>";
     document.getElementById("tabla").innerHTML = tabla;
