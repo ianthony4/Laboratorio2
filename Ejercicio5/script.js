@@ -10,7 +10,7 @@ botonCrear.addEventListener("click", crearTabla);
 function crearTabla(){
     cantidadValores = document.getElementById("valores").value;
 
-    tabla = `<table>
+    tabla = `<table border="1">
     <tr>
         <th>Valores</th>
     </tr>`;
@@ -23,16 +23,16 @@ function crearTabla(){
     tabla += "</table>";
     botonSuma = `<button type="button" id="suma">Calcular suma</button>`;
     document.getElementById("tabla").innerHTML = tabla + botonSuma;
+
+    let botonS = document.getElementById("suma");
+    botonS.addEventListener("click", sumarValores);
+
+    function sumarValores(){
+        for(i = 0; i < arregloValores.length; i++){
+            sumaT += arregloValores[i];
+        }
+        alert(sumaT);
 }
-
-let botonS = document.getElementById("suma");
-botonS.addEventListener("click", sumarValores);
-
-function sumarValores(){
-    for(i = 0; i < arregloValores.length; i++){
-        sumaT += arregloValores[i];
-    }
-    alert(sumaT);
 }
 
 function aleatorio(){
