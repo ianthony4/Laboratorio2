@@ -3,6 +3,7 @@ let cantidadValores = "";
 let tabla = "";
 let botonSuma = "";
 let arregloValores = [];
+let sumaT = 0;
 
 botonCrear.addEventListener("click", crearTabla);
 
@@ -24,10 +25,14 @@ function crearTabla(){
     document.getElementById("tabla").innerHTML = tabla + botonSuma;
 }
 
-botonSuma.addEventListener("click", sumaTotal);
+let botonS = document.getElementById("suma");
+botonS.addEventListener("click", sumarValores);
 
-function sumaTotal(){
-    
+function sumarValores(){
+    for(i = 0; i < arregloValores.length; i++){
+        sumaT += arregloValores[i];
+    }
+    alert(sumaT);
 }
 
 function aleatorio(){
