@@ -4,4 +4,5 @@ function respuesta() {
     const days = ["Domingo" , "Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado"];
     let day = days[dia];
     console.log(day);
+    document.getElementById("respuesta").innerHTML = day;
 }
