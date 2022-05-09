@@ -7,4 +7,7 @@ if (ahora.getMonth() == 7 && ahora.getDate() > 15){
     diaFestivo.setFullYear(year);
 }
 
+let diasFaltantes = (diaFestivo.getTime() - ahora.getTime()) / 1000 * 60 * 60 * 24;
+
+
 
