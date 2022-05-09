@@ -9,7 +9,7 @@ botonCrear.addEventListener("click", crearTabla);
 
 function crearTabla(){
     cantidadValores = document.getElementById("valores").value;
-    tabla = `<table border="1">
+    tabla = `<table>
     <tr>
         <th>Valores</th>
     </tr>`;
@@ -20,7 +20,7 @@ function crearTabla(){
         tabla += "<tr><td>"+numero+"</td></tr>";
     }
 
-    tabla += "</table>";
+    tabla += "</table><br>";
     botonSumaHtml = `<button type="button" id="suma">Calcular suma</button>`;
     document.getElementById("tabla").innerHTML = tabla + botonSumaHtml;
 
