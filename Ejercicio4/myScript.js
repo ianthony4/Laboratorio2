@@ -1,1 +1,3 @@
-let str;
+function seleccion(){
+    
+}
