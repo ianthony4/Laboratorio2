@@ -7,5 +7,7 @@ function seleccion(){
     }else if(str.length == 36){
         substr = str.slice(24,27)+str.slice(28,32)+str.slice(33,36);
         document.getElementById("respuesta").innerHTML = substr;
+    }else{
+        document.getElementById("respuesta").innerHTML = "Error, URL no valida";
     }
 }
