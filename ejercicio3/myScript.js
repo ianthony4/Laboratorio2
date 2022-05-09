@@ -1,6 +1,8 @@
 let ahora = new Date();
-let year = ahora
+let year = ahora.getFullYear();
+let diaFestivo = new Date(year, 7, 15);
 
 if (ahora.getMonth() == 7 && ahora.getDate() == 15){
-    let diaFestivo += 1;
+    let year += 1;
 }
+
